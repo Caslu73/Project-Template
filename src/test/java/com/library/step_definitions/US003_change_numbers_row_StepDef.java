@@ -14,17 +14,21 @@ public class US003_change_numbers_row_StepDef {
     UsersPage usersPage = new UsersPage();
     Select select = new Select(usersPage.showRecords);
     @When("I select Show {string} records")
-    public void iSelectShowRecords(String int50) {
-        select.selectByVisibleText("50");
+    public void iSelectShowRecords(String expectedSelectedNumber) {
+        select.selectByVisibleText(expectedSelectedNumber);
+
     }
 
     @Then("show records value should be {string}")
-    public void show_records_value_should_be(String int50) {
-        Assert.assertEquals(int50,select.getFirstSelectedOption().getText());
+    public void show_records_value_should_be(String expectedRecordValue) {
+        Assert.assertEquals(expectedRecordValue,select.getFirstSelectedOption().getText());
+
     }
     @Then("the users table must display {int} records")
     public void the_users_table_must_display_records(int expectedQuantityRecords) {
         Assert.assertEquals(expectedQuantityRecords,usersPage.usersTableRecords.size());
+
+
 
 
     }

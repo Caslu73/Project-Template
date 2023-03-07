@@ -43,9 +43,9 @@ public class US001_unique_id_STEPDF {
     UsersPage usersPage = new UsersPage();
     @Then("Each user id should be unique")
     public void each_user_id_should_be_unique() {
-        for (int i = 0; i < usersPage.userId.size()-1; i++) {
+        for (int i = 0; i < usersPage.usersIdList.size()-1; i++) {
 
-            Assert.assertNotEquals(usersPage.userId.get(i).getText(),usersPage.userId.get(i+1).getText());
+            Assert.assertNotEquals(usersPage.usersIdList.get(i).getText(),usersPage.usersIdList.get(i+1).getText());
         }
 
 
