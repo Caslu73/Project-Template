@@ -12,9 +12,9 @@ import org.junit.runner.RunWith;
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
         features = "src/test/resources/features",
-        glue = "com/library/com.library/step_definitions",
+        glue = "com/library/step_definitions",
         dryRun = false,
-        tags = " @wip",
+        tags = "@smoke",
         publish = true //generating a report with public link
 )
 
