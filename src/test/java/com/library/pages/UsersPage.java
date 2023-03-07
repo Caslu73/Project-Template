@@ -16,7 +16,7 @@ public class UsersPage {
 
 
     @FindBy (xpath = "//tbody//td[2]")
-    public List<WebElement> userId;
+    public List<WebElement> usersIdList;
 
     @FindBy (xpath = "//select[@name='tbl_users_length']")
     public WebElement showRecords;
