@@ -24,5 +24,8 @@ public class UsersPage {
     @FindBy(xpath = "//select[@name='tbl_users_length']//option")
     public List <WebElement> listShowRecords;
 
+    @FindBy (xpath = "//tbody//tr")
+    public List <WebElement> usersTableRecords;
+
 
 }
