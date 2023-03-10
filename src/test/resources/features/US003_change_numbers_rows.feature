@@ -1,13 +1,13 @@
-@smoke
+@us3 @smoke
 Feature:  manage user info table
 
   Agile Story: As a user, I want to change the number of raws to see the user info
-@US003
+
   Scenario: Change number of rows in Users page
 
     Given I am on the login page
     And I login as a librarian
-    And I click on Users link
-    When I select Show "50" records
-    Then show records value should be "50"
+    And I click on "Users" link
+    When I select Show 50 records
+    Then show records value should be 50
     And the users table must display 50 records
