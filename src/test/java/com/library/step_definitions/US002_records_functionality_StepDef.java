@@ -2,9 +2,9 @@ package com.library.step_definitions;
 
 import com.library.pages.UsersPage;
 import com.library.utilities.BrowserUtils;
-import com.library.utilities.Driver;
+
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 
@@ -18,17 +18,9 @@ public class US002_records_functionality_StepDef {
     @Then("show records default value should be {int}")
     public void showRecordsDefaultValueShouldBe(int expectedDefaultValue) {
 
-        /*
-        Select select = new Select(usersPage.showRecords);
-        String actualDefaultValueOnShowRecords = select.getFirstSelectedOption().getText();
-
-        int actualValueInt = Integer.parseInt(actualDefaultValueOnShowRecords);
-
-         */
         int actualDefaultValue = usersPage.stringOfSelectDropdownActualValueToInt(select);
 
         Assert.assertEquals(expectedDefaultValue,actualDefaultValue);
-
     }
 
     @Then("show records should have following options:")

@@ -1,0 +1,2 @@
+file:src/test/resources/features/US006_login_with_valid_credentials.feature:14
+file:src/test/resources/features/US004_show_records.feature:20

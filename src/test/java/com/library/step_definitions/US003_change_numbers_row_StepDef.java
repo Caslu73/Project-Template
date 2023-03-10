@@ -1,14 +1,14 @@
 package com.library.step_definitions;
 
-import com.library.pages.HomePage;
+
 import com.library.pages.UsersPage;
-import com.library.utilities.BrowserUtils;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 
-import java.util.List;
+
 
 public class US003_change_numbers_row_StepDef {
 
