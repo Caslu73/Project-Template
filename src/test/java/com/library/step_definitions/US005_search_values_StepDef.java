@@ -2,12 +2,11 @@ package com.library.step_definitions;
 
 import com.library.pages.UsersPage;
 import com.library.utilities.BrowserUtils;
-import com.library.utilities.Driver;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import java.util.List;
 

@@ -4,14 +4,13 @@ import com.library.utilities.BrowserUtils;
 import com.library.utilities.Driver;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.v85.page.Page;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
-import java.util.Map;
-import java.util.logging.XMLFormatter;
+
 
 public class UsersPage {
 
