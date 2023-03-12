@@ -33,9 +33,9 @@ public class US001_unique_id_StepDef {
     HomePage homePage = new HomePage();
 
     @When("I click on {string} link")
-    public void i_click_on_link(String expectedStr) {
+    public void i_click_on_link(String text) {
 
-        homePage.navigateTo(expectedStr);
+       homePage.navigateTo(text);
 
     }
 

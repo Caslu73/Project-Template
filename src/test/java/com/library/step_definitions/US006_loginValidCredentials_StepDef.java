@@ -4,11 +4,6 @@ import com.library.pages.HomePage;
 import com.library.pages.LoginPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
-
-
-
-
 public class US006_loginValidCredentials_StepDef {
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
