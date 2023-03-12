@@ -14,7 +14,7 @@ public class HomePage {
     }
 
     @FindBy(xpath = "//ul//li[2]")
-    public WebElement UsersModule;
+    public WebElement usersModule;
 
     @FindBy (xpath = "(//ul//span)[7]")
     public WebElement librarianName;
@@ -26,7 +26,6 @@ public class HomePage {
     public void navigateTo(String text){
     WebElement linkToPage = Driver.getDriver().findElement(By.xpath("//span[.='"+text+"']"));
     linkToPage.click();
-
 
 
     }
