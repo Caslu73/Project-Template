@@ -40,19 +40,21 @@ public class Driver {
              */
             switch (browserType){
                 case "chrome":
-                    //WebDriverManager.chromedriver().setup();
-                    ChromeOptions options = new ChromeOptions();
+                    //Issue chrome case
+                    
+                    ChromeOptions options = new ChromeOptions(); //Create new ChromeOptions object, called the object then using the method addArg and create the new driver with the arguments 
                     options.addArguments("--remote-allow-origins=*");
                     driverPool.set(new ChromeDriver(options));
                     driverPool.get().manage().window().maximize();
                     driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                     break;
                 case "firefox":
-                    //WebDriverManager.firefoxdriver().setup();
+                    
                     driverPool.set(new FirefoxDriver());
                     driverPool.get().manage().window().maximize();
                     driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
                     break;
+                    //WebDriverManager.firefoxdriver().setup();//WebDriverManager.chromedriver().setup();
 
                 case "edge":
                     driverPool.set(new EdgeDriver());
