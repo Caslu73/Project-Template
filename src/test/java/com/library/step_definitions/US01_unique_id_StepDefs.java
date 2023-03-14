@@ -4,6 +4,7 @@ import com.library.pages.HomePage;
 import com.library.pages.LoginPage;
 import com.library.pages.UsersPage;
 
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,7 +17,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class US001_unique_id_StepDef {
+public class US01_unique_id_StepDefs {
 
     LoginPage loginPage = new LoginPage();
     @Given("I am on the login page")
@@ -64,4 +65,6 @@ public class US001_unique_id_StepDef {
 
 
     }
+
+
 }

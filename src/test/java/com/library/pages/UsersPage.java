@@ -31,7 +31,7 @@ public class UsersPage {
     @FindBy (xpath = "//tbody//tr")
     public List <WebElement> usersTableRecords;
 
-    @FindBy (xpath = "//input[@type='search']")
+    @FindBy (css = "input[type='search']")
     public WebElement searchBox;
 
     @FindBy (xpath = "//tbody//td[4]")
@@ -42,6 +42,22 @@ public class UsersPage {
 
     @FindBy (xpath = "//tr//th")
     public List <WebElement> tableColumnsNames;
+
+    @FindBy (xpath = "//form//div//input[@placeholder]")
+    public List <WebElement> placeHolders;
+
+    @FindBy (id = "address")
+    public WebElement address;
+
+    @FindBy (xpath = "//th")
+    public List <WebElement> keyMap;
+
+    @FindBy (xpath = "//td")
+    public List <WebElement> valuesMap;
+
+
+
+
 
 
 

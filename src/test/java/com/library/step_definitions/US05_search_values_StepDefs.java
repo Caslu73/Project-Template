@@ -10,7 +10,7 @@ import org.junit.Assert;
 
 import java.util.List;
 
-public class US005_search_values_StepDef {
+public class US05_search_values_StepDefs {
 
     UsersPage usersPage = new UsersPage();
     @When("I search for {string}")

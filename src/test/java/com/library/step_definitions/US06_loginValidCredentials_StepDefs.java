@@ -4,7 +4,7 @@ import com.library.pages.HomePage;
 import com.library.pages.LoginPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-public class US006_loginValidCredentials_StepDef {
+public class US06_loginValidCredentials_StepDefs {
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
     @When("I login using {string} and {string}")
