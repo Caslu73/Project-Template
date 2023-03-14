@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 
 
-public class US003_change_numbers_row_StepDef {
+public class US03_change_numbers_row_StepDefs {
 
     UsersPage usersPage = new UsersPage();
     Select select = new Select(usersPage.showRecords);

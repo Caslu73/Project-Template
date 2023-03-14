@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-public class US002_records_functionality_StepDef {
+public class US02_records_functionality_StepDefs {
 
     UsersPage usersPage = new UsersPage();
     Select select = new Select(usersPage.showRecords);
